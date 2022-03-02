@@ -13,7 +13,7 @@ process.on("uncaughtException", (err) => {
   console.log("Shut down Due to uncaught error");
   process.exit(1);
 });
-conectionDatabase();
+//conectionDatabase();
 
 const server = app.listen(process.env.SERVER_PORT, () => {
   console.log("server is worknig");
@@ -42,3 +42,5 @@ console.log(" this is excution file  " + execution);
 //   if (err) throw err;
 //   console.log("db connected ");
 // });
+
+// modified as mongdb connection is commited from 
